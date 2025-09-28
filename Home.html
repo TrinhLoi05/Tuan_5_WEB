@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <style>
+        header{
+            display: flex;
+            background-color: black;
+            width: 100%;
+            height: 65px;
+            justify-content: space-between;/* canh giữa chiều ngang */
+            align-items: center; /* canh giữa chiều dọc */
+
+            
+
+        }
+        .logo{
+            color: white;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-style: oblique;
+        }
+
+        .menu{
+
+        }
+        .menu a{
+            text-decoration: none;
+            color: white;
+            margin: 20px;
+            
+        }
+
+        .menu a:hover{
+            color: yellow;
+        }
+        .OderOnline{
+            display: flex;
+        }
+        .OderOnline button{
+            border-radius: 5cap;
+            background-color: yellow;
+        }
+        .OderOnline img{
+            width: 100px;
+            height: 30px;
+            align-items: center;
+            
+        }
+        .content{
+            display: flex;
+            width: 100%;
+            height: 700px;
+            justify-content: flex-start;
+            align-items: center;
+            background-image: url("burger.jpg");
+            background-size: cover;   /* ảnh phủ kín */
+            background-position: center; /* căn giữa khối nếu ảnh lớn hơn vẫn không bị cắt */ 
+            color: black; /* chữ nổi bật trên nền */
+            text-align: left;
+
+        }
+
+        .content section button{
+            background-color: rgb(125, 125, 11);
+            border-radius: 10px;
+            width: 150px;
+            height: 35px;
+            color:white;
+        }
+        
+        footer{
+            display: flex;
+            background-color: antiquewhite;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 50px;
+        }
+
+
+
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <h2>Feane</h2>
+        </div>
+
+        <div class="menu">
+            <a href="Home.html">HOME</a>
+            <a href="menu.html">MENU</a>
+            <a href="about.html">ABOUT</a>
+            <a href="booktable.html">BOOK TABLE</a>
+        </div>
+
+        <div class="OderOnline">
+            <img src="giohang.jpg" alt="GioHang">
+            <button>Oder Online</button>
+        </div>
+    </header>
+
+    <div class="content">
+        <section>
+            <h1>Fast Food Restaurant</h1>
+            <p>Doloremque, itaque aperiam facilis rerum, commodi, temporibus sapiente ad mollitia laborum 
+                quam quisquam esse error unde. Tempora ex doloremque, labore, sunt repellat dolore, iste 
+                magni quos nihil ducimus libero ipsam.</p> <br>
+            <button>Oder Now</button>
+        </section>
+    </div>
+    
+
+    <footer>
+        <p>Chuyên cung cấp pizza nội thành hồ chí minh <strong>Email:</strong> <i>pizzangon@gmail.com</i> </p>
+    </footer>
+</body>
+</html>

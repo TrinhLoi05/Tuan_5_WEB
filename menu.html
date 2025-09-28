@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>menu</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+
+        header{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+        
+        }
+        .menu a{
+            text-decoration: none;
+            color: aliceblue;
+            margin: 0 10px;
+        }
+
+        .menu a:hover{
+            color: yellow;
+        }
+
+        .oderonline button{
+            border-radius: 50cap;
+            width: 110px;
+            height: 40px;
+            background-color: rgb(222, 222, 124);
+        }
+
+        nav{
+            display: flex;
+            flex-direction: column; /* xếp theo cột */
+            align-items: center;     /* căn giữa ngang */
+            margin: 40px 0px;
+
+            
+        }
+
+        .div1 h2{
+            font-size: 28px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-style: italic;  /* in nghiên */
+
+
+        }
+
+        .div2 button{
+            color: white;
+            margin: 10px; 
+            background-color: #333; 
+            border-radius: 20cap; /* bo góc */
+            
+            
+        }
+
+    section {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); /* 3 cột */
+        gap: 20px; 
+        padding: 20px;
+        text-align: center;
+    }
+    section img {
+        width: 100%;
+        height: 250px;
+        object-fit: cover; /* cắt ảnh vừa khung */
+        border-radius: 25px;
+    }
+    section div {
+        background-color: #f9f9f9;
+        border-radius: 15px;
+        padding: 15px;
+        box-shadow: none; /* bóng khung */
+    }
+
+
+
+
+        footer{
+            display: flex;
+            background-color: bisque;
+            justify-content: center;
+            align-items: center;
+            height: 50px;
+    
+        }
+
+
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <p><strong>Feane</strong></p>
+        </div>
+
+        <div class="menu">
+            <a href="Home.html">HOME</a>
+            <a href="menu.html">MENU</a>
+            <a href="about.html">ABOUT</a>
+            <a href="booktable.html">BOOK TABLE</a>
+        </div>
+
+        <div class="oderonline">
+            <img src="giohang.jpg" alt="giohang" width="100px" height="30px">
+            <button>Oder Online</button>
+        </div>
+    </header>
+
+    <!-- Nav -->
+    
+    <nav>
+        <div class="div1">
+            <h2>Our Menu</h2>
+        </div>
+
+        <div class="div2">
+
+            <button>All</button>
+            <button>Burger</button>
+            <button>Pizza</button>
+            <button>Pasta</button>
+            <button>Fries</button>
+            
+
+        </div>
+
+    </nav>
+
+    <!-- Section -->
+    <section>
+        <div class="section-1">
+            <img src="pizza1.jpg" alt="Ảnh Pizza">
+            <h3>Dellicous Pizza</h3> <br>
+            <p>hãy thưởng thức vị pizza ngon truyền thống.</p>
+        </div>
+
+        <div class="section-2">
+            <img src="burger.jpg" alt="Ảnh Burger">
+            <h3>Dellicous Burger</h3><br>
+            <p>Đậm đà bản chất Việt, với hương liệu ngon khó cưỡng</p><br>
+
+        </div>
+
+        <div class="section-3">
+            <img src="pizza2.jpg" alt="Ảnh Pizza">
+            <h3>Dellicous Pizza</h3> <br>
+            <p>Loại nhân thịt với hương vị đậm đà, nóng giòn.</p>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+        <p>Chuyên cung cấp pizza nội thành hồ chí minh <strong>Email:</strong> <i>pizzangon@gmail.com</i> </p>
+    </footer>
+
+</body>
+</html>
